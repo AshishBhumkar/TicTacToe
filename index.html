@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tic Tac Toe</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		
+		<!-- Custom css -->
+		<link rel="stylesheet" text="text/css" href="css/style.css">
+			
+	</head>
+	<body>
+		<div class="container">
+			<!-- User Selection section -->
+			<div class="form-group header">
+				<select id="slcBoardSize" onChange="changeBoard();" class="form-control slcControl">	
+				</select>
+				<button type="button" class="btn btn-default" id="btnGameStart" onclick="checkGame()">Start New Game</button>
+				<p class="bg-primary" id="helpPlayer"></p>
+			</div>
+			<div id="divBoard">
+			</div>
+			<!-- End User Selection section -->
+		</div>
+		
+		<!-- Modal to show the message for new Game -->
+		<div class="modal fade bs-example-modal-sm" id="divNewGame">
+ 	 		<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-body">
+        				<p>Do you want to start new game? The previous game is override by new one.</p>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        				<button type="button" class="btn btn-primary" id="btnNewGame">Yes</button>
+      				</div>
+    			</div><!-- /.modal-content -->
+  			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- End Modal to show the message fot new Game -->
+		
+		<!-- Modal to show the message for the winner -->
+		<div class="modal fade bs-example-modal-sm" id="divWinner">
+ 	 		<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-body">
+        				<p id="pWinner"></p>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        				<button type="button" class="btn btn-primary" id="btnWinner">Yes</button>
+      				</div>
+    			</div><!-- /.modal-content -->
+  			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- End Modal to show the message for the winner -->
+   
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="js/jquery.min.js"></script>
+	    
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/bootstrap.min.js"></script>
+	    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="js/user.js"></script>
+	</body>
+</html>

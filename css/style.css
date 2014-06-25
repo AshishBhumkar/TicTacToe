@@ -1,0 +1,36 @@
+td {
+    background-color: #5ba1d0;
+    border: 2px solid white;
+    font-size:40px;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#ffffff;
+    line-height: 1.428571429;
+    border-radius: 10px 10px 10px 10px;
+    align: center;
+    valign: center;
+    height: 80px;
+    width: 80px;
+}
+
+td:hover {
+	cursor: pointer;
+}
+
+.slcControl {
+	width: 100px;
+	display: inline;
+}
+
+.header {
+	text-align: center;
+	padding: 20px;
+}
+
+#divBoard {
+	text-align: center;
+}
+
+#helpPlayer {
+	width: 200px;
+	background-color: #428BCA;
+}
